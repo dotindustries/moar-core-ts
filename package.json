@@ -1,7 +1,7 @@
 {
   "name": "@moar/core-ts",
   "version": "0.0.0-dripip",
-  "repository": "git@github.com:jasonkuhrt/@moar/core-ts.git",
+  "repository": "git@github.com:nadilas/@moar/core-ts.git",
   "author": "Jason Kuhrt",
   "license": "MIT",
   "files": [

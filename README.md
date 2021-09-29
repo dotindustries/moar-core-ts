@@ -31,7 +31,7 @@ gh repo clone nadilas/moar-core-ts foobar \
    && cd foobar \
    && yarn \
    && yarn -s bootstrap \
-      --repoOrg 'jasonkuhrt/foobar' \
+      --repoOrg 'nadilas/foobar' \
       --developerName 'Jason Kuhrt' \
       --packageName 'foobar' \
       --createGithubRepo

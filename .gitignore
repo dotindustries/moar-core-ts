@@ -109,3 +109,4 @@ dist
 # This library
 dist-esm
 dist-cjs
+/.idea/
