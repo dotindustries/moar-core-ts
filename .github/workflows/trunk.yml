@@ -39,11 +39,11 @@ jobs:
           echo "::set-output name=is_NPM_TOKEN_set::${{ env.NPM_TOKEN != '' }}"
 
   release-canary:
-    needs: [test, checkNpmTokenSet]
-    if: needs.checkNpmTokenSet.outputs.is_NPM_TOKEN_set == 'true'
+    needs: [test]
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    if: env.NPM_TOKEN != null
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
