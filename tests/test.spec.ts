@@ -5,5 +5,5 @@ it('works', () => {
 })
 
 it('imports using paths config works relative', () => {
-  expect(typeof Lib.todo).toEqual('function')
+  expect(typeof Lib.makeClient).toEqual('function')
 })
