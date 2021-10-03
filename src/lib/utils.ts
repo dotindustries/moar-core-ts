@@ -1,14 +1,14 @@
+
+import {MoarClient} from '#client'
+
 /**
- * Does the todo thing.
+ * Creates a new MoarClient
  *
  * @example
  *
- *   const a = foobar({
- *     a: 1,
- *     b: 2,
- *   })
+ *   const client = makeClient()
  *
  */
-export function todo(): void {
-  console.log(nameof(todo))
+export function makeClient(serviceAddress?: string): MoarClient {
+  return new MoarClient(serviceAddress)
 }

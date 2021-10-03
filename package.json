@@ -2,7 +2,7 @@
   "name": "@moar/core-ts",
   "version": "0.0.0-dripip",
   "repository": "git@github.com:nadilas/@moar/core-ts.git",
-  "author": "Jason Kuhrt",
+  "author": "nadilas",
   "license": "MIT",
   "files": [
     "dist-cjs",
@@ -45,7 +45,10 @@
     "prepare": "ts-patch install -s"
   },
   "dependencies": {
-    "tslib": "^2.3.1"
+    "@protobuf-ts/plugin": "^2.0.4-alpha.0",
+    "axios": "^0.22.0",
+    "tslib": "^2.3.1",
+    "twirp-ts": "^2.3.7"
   },
   "devDependencies": {
     "@homer0/prettier-plugin-jsdoc": "4.0.5",
