@@ -24,26 +24,26 @@ jobs:
       - run: yarn -s test
 
   # https://github.community/t/how-can-i-test-if-secrets-are-available-in-an-action/17911/10?u=jasonkuhrt
-  checkNpmTokenSet:
+  # https://github.com/actions/runner/issues/520#issuecomment-907770967
+  check-env:
     name: Check if NPM_TOKEN secret is set
     runs-on: ubuntu-latest
     outputs:
-      is_NPM_TOKEN_set: ${{ steps.checkNpmTokenSet.outputs.is_MY_SECRET_set }}
+      is_NPM_TOKEN_set: ${{ steps.NPM_TOKEN.outputs.defined }}
     steps:
       - name: Check if NPM_TOKEN secret is set
-        id: checkNpmTokenSet
+        id: NPM_TOKEN
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          echo "is_NPM_TOKEN_set: ${{ env.NPM_TOKEN != '' }}"
-          echo "::set-output name=is_NPM_TOKEN_set::${{ env.NPM_TOKEN != '' }}"
+        if: "${{ env.NPM_TOKEN != '' }}"
+        run: echo "::set-output name=defined::true"
 
   release-canary:
-    needs: [test]
+    needs: [test, check-env]
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    if: env.NPM_TOKEN != null
+    if: needs.check-env.outputs.is_NPM_TOKEN_set == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
