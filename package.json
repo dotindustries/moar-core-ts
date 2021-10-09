@@ -1,8 +1,8 @@
 {
-  "name": "@moar/core-ts",
+  "name": "@blightio/moar-ts",
   "version": "0.0.0-dripip",
-  "repository": "git@github.com:nadilas/@moar/core-ts.git",
-  "author": "nadilas",
+  "repository": "git@github.com:blightio/moar-core-ts.git",
+  "author": "blightio",
   "license": "MIT",
   "private": false,
   "files": [

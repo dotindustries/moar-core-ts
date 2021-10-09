@@ -1,6 +1,6 @@
 # @moar/core-ts
 
-[![trunk](https://github.com/nadilas/moar-core-ts/actions/workflows/trunk.yml/badge.svg)](https://github.com/nadilas/moar-core-ts/actions/workflows/trunk.yml)
+[![trunk](https://github.com/blightio/moar-core-ts/actions/workflows/trunk.yml/badge.svg)](https://github.com/blightio/moar-core-ts/actions/workflows/trunk.yml)
 
 Project template for TypeScript libraries
 
@@ -9,7 +9,7 @@ Project template for TypeScript libraries
 1. Setup a clone of this repo:
 
    ```
-   gh repo clone nadilas/moar-core-ts <your package name> && cd <your package name> && yarn
+   gh repo clone blightio/moar-core-ts <your package name> && cd <your package name> && yarn
    ```
 
 1. Run the bootstrapper script:
@@ -27,11 +27,11 @@ Project template for TypeScript libraries
 Example:
 
 ```
-gh repo clone nadilas/moar-core-ts foobar \
+gh repo clone blightio/moar-core-ts foobar \
    && cd foobar \
    && yarn \
    && yarn -s bootstrap \
-      --repoOrg 'nadilas/foobar' \
+      --repoOrg 'blightio/foobar' \
       --developerName 'Jason Kuhrt' \
       --packageName 'foobar' \
       --createGithubRepo
