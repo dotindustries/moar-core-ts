@@ -4,6 +4,7 @@
   "repository": "git@github.com:nadilas/@moar/core-ts.git",
   "author": "nadilas",
   "license": "MIT",
+  "private": false,
   "files": [
     "dist-cjs",
     "dist-esm"
