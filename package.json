@@ -1,8 +1,8 @@
 {
-  "name": "@blightio/moar-ts",
+  "name": "@dotindustries/moar-ts",
   "version": "0.0.0-dripip",
-  "repository": "git@github.com:blightio/moar-core-ts.git",
-  "author": "blightio",
+  "repository": "git@github.com:dotindustries/moar-core-ts.git",
+  "author": "dotindustries",
   "license": "MIT",
   "private": false,
   "files": [
@@ -43,7 +43,8 @@
     "release:canary": "dripip preview",
     "release:stable": "dripip stable",
     "prepublishOnly": "yarn -s build",
-    "prepare": "ts-patch install -s"
+    "prepare": "ts-patch install -s",
+    "protoc": "proto.sh"
   },
   "dependencies": {
     "@protobuf-ts/plugin": "^2.0.4-alpha.0",
@@ -73,6 +74,7 @@
     "ts-nameof": "5.0.0",
     "ts-node": "10.2.1",
     "ts-patch": "^1.4.4",
+    "ts-protoc-gen": "^0.15.0",
     "typescript": "4.4.3",
     "typescript-snapshots-plugin": "1.7.0",
     "typescript-transform-paths": "3.3.1"

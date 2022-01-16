@@ -1,16 +1,16 @@
 import {
-  CreateModuleRequest,
-  CreateModuleResponse,
-  DeleteModuleRequest,
-  DeleteModuleResponse,
-  DeleteVersionRequest,
-  DeleteVersionResponse,
-  GetModuleRequest,
-  GetModuleResponse,
   GetUrlRequest,
   GetUrlResponse,
+  CreateModuleRequest,
+  CreateModuleResponse,
+  GetModuleRequest,
+  GetModuleResponse,
+  DeleteModuleRequest,
+  DeleteModuleResponse,
   UploadVersionRequest,
   UploadVersionResponse,
+  DeleteVersionRequest,
+  DeleteVersionResponse,
 } from './moar'
 
 //==================================//
