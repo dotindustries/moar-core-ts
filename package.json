@@ -55,6 +55,7 @@
   "devDependencies": {
     "@homer0/prettier-plugin-jsdoc": "4.0.5",
     "@prisma-labs/prettier-config": "0.1.0",
+    "@types/google-protobuf": "^3.15.5",
     "@types/jest": "27.0.2",
     "@types/node": "16.9.6",
     "@types/ts-nameof": "4.2.1",
